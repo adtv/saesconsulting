@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clientes — SAES Consulting</title>
+  <meta name="description" content="Por más de 20 años, nuestros clientes hablan por nosotros. Conozca algunas de las empresas que han confiado en SAES Consulting." />
+  <meta property="og:title" content="Nuestros clientes — SAES Consulting" />
+  <meta property="og:description" content="Empresas líderes en México y Latinoamérica que han confiado en nuestro head hunting especializado." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Fraunces', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <header class="site-header" id="site-header"></header>
+
+  <main class="flex-1">
+
+    <section class="container-page py-20">
+      <span class="section-label">Clientes</span>
+      <h1 class="font-display mt-3 max-w-3xl text-4xl md:text-6xl">
+        Algunos de <span class="italic" style="color: var(--accent);">nuestros clientes.</span>
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg" style="color: var(--muted-foreground);">
+        "Por más de 20 años nuestros clientes hablan por nosotros." Empresas líderes en banca, salud,
+        manufactura, retail, medios y consumo han confiado en SAES Consulting para identificar a sus líderes.
+      </p>
+
+      <div class="mt-14 card p-6 md:p-10">
+        <img
+          src="assets/images/clientes-logos.png"
+          alt="Logos de clientes de SAES Consulting: Dankel Medical, Qualytel, GRISI, GNP Seguros, Cappini, Mapfre, FIMSA, Vitro Envases, CCL, Citibanamex, Qualy, Lucta, Revlon, Boston Scientific, Allergan, Imagen, Pentamed, TV Azteca, Crédito Familiar, Hospital Angeles, BBVA, Kendall, Banorte IXE, Cemex, tam-mex, Cinram Latinoamericana, Softtek, PSN, Imaginaria, Wilson, Wella, Combe y Dankel Medical."
+          class="mx-auto w-full max-w-5xl"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="assets/js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAES Consulting — Head Hunting de ejecutivos en México</title>
+  <meta name="description" content="Más de 30 años identificando líderes para empresas líderes. Búsqueda especializada de ejecutivos, gerentes y directivos en México y LATAM." />
+  <meta property="og:title" content="SAES Consulting — Head Hunting de ejecutivos" />
+  <meta property="og:description" content="Identificamos líderes que impulsan resultados. Head hunting especializado desde 1993." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Fraunces', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <header class="site-header" id="site-header"></header>
+
+  <main class="flex-1">
+
+    <!-- ── Hero ─────────────────────────────────────────────── -->
+    <section class="bg-hero text-white overflow-hidden relative">
+      <div class="container-page grid gap-12 py-20 md:py-28 md:gap-16 items-center" style="grid-template-columns: 1fr;">
+        <div class="grid md:grid-cols-[1.1fr_1fr] gap-12 md:gap-16 items-center">
+
+          <!-- Copy -->
+          <div>
+            <span class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-3 py-1 text-xs uppercase tracking-wider text-white/80">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .962 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.582a.5.5 0 0 1 0 .962L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.962 0z"/>
+              </svg>
+              Desde 1993
+            </span>
+
+            <h1 class="font-display mt-6 text-4xl leading-[1.05] md:text-6xl text-white">
+              Las empresas no necesitan jefes,<br />
+              <span class="italic" style="color: var(--accent);">necesitan líderes.</span>
+            </h1>
+
+            <p class="mt-6 max-w-xl text-lg text-white/80">
+              SAES Consulting identifica y conecta a los ejecutivos que su organización necesita para crecer.
+              Head hunting especializado, con más de 30 años de experiencia en posiciones gerenciales y directivas.
+            </p>
+
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="contacto.html" class="btn-primary">
+                Iniciar una búsqueda
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <a href="metodologia.html" class="btn-outline">Conocer metodología</a>
+            </div>
+
+            <!-- Stats -->
+            <div class="mt-12 grid grid-cols-3 gap-6 border-t border-white/15 pt-8">
+              <div>
+                <div class="font-display text-3xl" style="color: var(--accent);">30+</div>
+                <div class="mt-1 text-xs uppercase tracking-wider text-white/60">años de experiencia</div>
+              </div>
+              <div>
+                <div class="font-display text-3xl" style="color: var(--accent);">≤ 3 sem</div>
+                <div class="mt-1 text-xs uppercase tracking-wider text-white/60">candidatos finalistas</div>
+              </div>
+              <div>
+                <div class="font-display text-3xl" style="color: var(--accent);">15+</div>
+                <div class="mt-1 text-xs uppercase tracking-wider text-white/60">sectores especializados</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="relative">
+            <div class="absolute -inset-4 rounded-3xl opacity-30 blur-2xl bg-accent-gradient"></div>
+            <img
+              src="assets/images/hero-team.jpg"
+              alt="Equipo directivo en reunión"
+              class="relative rounded-2xl shadow-elegant"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Problem stat ──────────────────────────────────────── -->
+    <section class="container-page py-20">
+      <div class="grid gap-10 md:grid-cols-2 md:gap-16 items-center">
+        <div>
+          <span class="section-label">¿Sabías que?</span>
+          <h2 class="font-display mt-3 text-3xl md:text-4xl">
+            Un mal jefe daña la productividad. Un líder puede aumentarla hasta
+            <span style="color: var(--accent);">100%</span>.
+          </h2>
+        </div>
+        <div class="card">
+          <div class="font-display text-5xl" style="color: var(--primary);">17.8%</div>
+          <p class="mt-3 text-sm" style="color: var(--muted-foreground);">
+            México registra uno de los niveles más altos de rotación de personal en América Latina,
+            cuando la cifra recomendable es del 10%. Esto impacta directamente en las finanzas de su empresa.
+          </p>
+          <p class="mt-4 font-medium">Contrate a profesionales. Nosotros los tenemos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Value props ───────────────────────────────────────── -->
+    <section class="py-20" style="background: oklch(0.96 0 0 / 60%);">
+      <div class="container-page">
+        <div class="max-w-2xl">
+          <span class="section-label">Propuesta de valor</span>
+          <h2 class="font-display mt-3 text-3xl md:text-4xl">Nuestra efectividad es tu pieza faltante</h2>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+          <!-- Card 1 -->
+          <div class="card group transition-all hover:-translate-y-1 hover:shadow-elegant">
+            <div class="flex items-center gap-3">
+              <span class="grid h-10 w-10 place-items-center rounded-full" style="background: color-mix(in oklab, var(--accent) 15%, transparent); color: var(--accent);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+                </svg>
+              </span>
+              <span class="text-xs font-mono" style="color: var(--muted-foreground);">01</span>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Enfoque a resultados</h3>
+            <p class="mt-2 text-sm" style="color: var(--muted-foreground);">Procesos personalizados; identificamos y gestionamos cada particularidad.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card group transition-all hover:-translate-y-1 hover:shadow-elegant">
+            <div class="flex items-center gap-3">
+              <span class="grid h-10 w-10 place-items-center rounded-full" style="background: color-mix(in oklab, var(--accent) 15%, transparent); color: var(--accent);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </span>
+              <span class="text-xs font-mono" style="color: var(--muted-foreground);">02</span>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Asertividad</h3>
+            <p class="mt-2 text-sm" style="color: var(--muted-foreground);">Consultores especializados en cada área o sector del mercado laboral.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card group transition-all hover:-translate-y-1 hover:shadow-elegant">
+            <div class="flex items-center gap-3">
+              <span class="grid h-10 w-10 place-items-center rounded-full" style="background: color-mix(in oklab, var(--accent) 15%, transparent); color: var(--accent);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>
+                </svg>
+              </span>
+              <span class="text-xs font-mono" style="color: var(--muted-foreground);">03</span>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Agilidad</h3>
+            <p class="mt-2 text-sm" style="color: var(--muted-foreground);">Base de datos especializada y herramientas de atracción de candidatos motivados.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card group transition-all hover:-translate-y-1 hover:shadow-elegant">
+            <div class="flex items-center gap-3">
+              <span class="grid h-10 w-10 place-items-center rounded-full" style="background: color-mix(in oklab, var(--accent) 15%, transparent); color: var(--accent);">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </span>
+              <span class="text-xs font-mono" style="color: var(--muted-foreground);">04</span>
+            </div>
+            <h3 class="mt-4 text-lg font-semibold">Servicio integral</h3>
+            <p class="mt-2 text-sm" style="color: var(--muted-foreground);">Desde la definición de la posición hasta el seguimiento posterior a la colocación.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Pyramid ───────────────────────────────────────────── -->
+    <section class="container-page py-20">
+      <div class="grid gap-12 md:grid-cols-2 items-center">
+        <div>
+          <span class="section-label">Niveles que reclutamos</span>
+          <h2 class="font-display mt-3 text-3xl md:text-4xl">Pirámide de puestos por jerarquía</h2>
+          <p class="mt-4" style="color: var(--muted-foreground);">
+            Desde 1993 nos especializamos en posiciones gerenciales, directivas y de alta especialización
+            en una amplia gama de industrias.
+          </p>
+          <div class="mt-6 flex items-center gap-3 rounded-xl border-l-4 p-4" style="border-color: var(--accent); background: oklch(0.96 0 0 / 60%);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"
+              style="color: var(--accent); flex-shrink: 0;">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <span class="text-sm">Candidatos finalistas en menos de 3 semanas.</span>
+          </div>
+        </div>
+
+        <div class="space-y-3" style="display: flex; flex-direction: column; gap: 0.75rem;">
+
+          <div class="card shadow-soft">
+            <div class="flex items-center justify-between text-xs" style="color: var(--muted-foreground);">
+              <span>Tier 1</span><span>01</span>
+            </div>
+            <div class="font-display mt-2 text-xl" style="color: var(--primary);">Directores Generales y VP's</div>
+            <div class="mt-3 h-1.5 overflow-hidden rounded-full" style="background: var(--secondary);">
+              <div class="h-full bg-accent-gradient" style="width: 60%;"></div>
+            </div>
+          </div>
+
+          <div class="card shadow-soft">
+            <div class="flex items-center justify-between text-xs" style="color: var(--muted-foreground);">
+              <span>Tier 2</span><span>02</span>
+            </div>
+            <div class="font-display mt-2 text-xl" style="color: var(--primary);">Gerentes y Directores</div>
+            <div class="mt-3 h-1.5 overflow-hidden rounded-full" style="background: var(--secondary);">
+              <div class="h-full bg-accent-gradient" style="width: 80%;"></div>
+            </div>
+          </div>
+
+          <div class="card shadow-soft">
+            <div class="flex items-center justify-between text-xs" style="color: var(--muted-foreground);">
+              <span>Tier 3</span><span>03</span>
+            </div>
+            <div class="font-display mt-2 text-xl" style="color: var(--primary);">Puestos de alta especialización</div>
+            <div class="mt-3 h-1.5 overflow-hidden rounded-full" style="background: var(--secondary);">
+              <div class="h-full bg-accent-gradient" style="width: 100%;"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA Banner ────────────────────────────────────────── -->
+    <section class="container-page pb-20">
+      <div class="bg-hero overflow-hidden rounded-3xl p-10 text-white md:p-16">
+        <div class="grid gap-6 md:grid-cols-[1.5fr_1fr] items-center">
+          <div>
+            <h2 class="font-display text-3xl md:text-4xl">"Por más de 20 años nuestros clientes hablan por nosotros."</h2>
+            <p class="mt-4 text-white/70">Cuéntenos qué líder está buscando. Le presentamos finalistas en menos de 3 semanas.</p>
+          </div>
+          <a href="contacto.html"
+            class="inline-flex w-fit items-center gap-2 rounded-full px-6 py-3 font-medium transition-colors"
+            style="background: var(--background); color: var(--foreground);"
+            onmouseover="this.style.background='var(--accent)';this.style.color='var(--accent-foreground)'"
+            onmouseout="this.style.background='var(--background)';this.style.color='var(--foreground)'">
+            Hablemos hoy
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="assets/js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* ============================================================
+   SAES Consulting — Design System
+   ============================================================ */
+
+:root {
+  --radius: 0.5rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.16 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.16 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.16 0 0);
+  --primary: oklch(0.16 0 0);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.96 0 0);
+  --secondary-foreground: oklch(0.16 0 0);
+  --muted: oklch(0.95 0 0);
+  --muted-foreground: oklch(0.42 0 0);
+  --accent: oklch(0.48 0.18 25);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(0.9 0 0);
+  --input: oklch(0.9 0 0);
+  --ring: oklch(0.48 0.18 25);
+  --brand-red: oklch(0.48 0.18 25);
+  --gradient-hero: linear-gradient(135deg, oklch(0.12 0 0) 0%, oklch(0.20 0 0) 55%, oklch(0.32 0.10 25) 100%);
+  --gradient-accent: linear-gradient(135deg, oklch(0.55 0.20 25), oklch(0.42 0.17 25));
+  --shadow-elegant: 0 20px 60px -20px color-mix(in oklab, oklch(0.16 0 0) 40%, transparent);
+  --shadow-soft: 0 8px 30px -10px color-mix(in oklab, oklch(0.16 0 0) 18%, transparent);
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border-color: var(--border); }
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "ss01", "cv11";
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* ── Utilities ─────────────────────────────────────────────── */
+.bg-hero           { background-image: var(--gradient-hero); }
+.bg-accent-gradient{ background-image: var(--gradient-accent); }
+.shadow-elegant    { box-shadow: var(--shadow-elegant); }
+.shadow-soft       { box-shadow: var(--shadow-soft); }
+.container-page    { max-width: 1200px; margin-inline: auto; padding-inline: 1.5rem; }
+
+/* ── Reusable components ────────────────────────────────────── */
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  border-radius: 9999px;
+  background-image: var(--gradient-accent);
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  color: var(--accent-foreground);
+  box-shadow: var(--shadow-elegant);
+  transition: transform 0.2s;
+  border: none; cursor: pointer;
+}
+.btn-primary:hover { transform: translateY(-2px); }
+
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.9);
+  background: transparent;
+  cursor: pointer; transition: background 0.2s;
+}
+.btn-outline:hover { background: rgba(255,255,255,0.1); }
+
+.btn-dark {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  border-radius: 9999px;
+  background: var(--foreground);
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem; font-weight: 500;
+  color: var(--background);
+  transition: opacity 0.2s; cursor: pointer; border: none;
+}
+.btn-dark:hover { opacity: 0.88; }
+
+.section-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+.card {
+  border-radius: calc(var(--radius) + 8px);
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+/* ── Header ─────────────────────────────────────────────────── */
+.site-header {
+  position: sticky; top: 0; z-index: 40;
+  border-bottom: 1px solid color-mix(in oklab, var(--border) 60%, transparent);
+  background: color-mix(in oklab, var(--background) 80%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.site-header .inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 4rem;
+}
+.site-header .logo img { height: 2.5rem; width: auto; }
+
+.site-nav { display: flex; align-items: center; gap: 0.25rem; }
+.site-nav a {
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  transition: background 0.15s, color 0.15s;
+}
+.site-nav a:hover, .site-nav a.active {
+  background: var(--secondary);
+  color: var(--foreground);
+}
+
+.mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.25rem; }
+.mobile-nav { display: none; border-top: 1px solid var(--border); background: var(--background); }
+.mobile-nav.open { display: block; }
+.mobile-nav nav { display: flex; flex-direction: column; padding: 0.5rem 0; }
+.mobile-nav nav a { padding: 0.75rem 1.5rem; font-size: 0.875rem; color: var(--foreground); }
+
+@media (max-width: 767px) {
+  .site-nav, .header-cta { display: none !important; }
+  .mobile-menu-btn { display: block; }
+}
+
+/* ── Footer ─────────────────────────────────────────────────── */
+.site-footer { margin-top: 6rem; background: var(--primary); color: var(--primary-foreground); }
+.site-footer .grid {
+  display: grid; gap: 2.5rem;
+  padding: 4rem 0;
+  grid-template-columns: 1fr;
+}
+.footer-logo-wrap {
+  display: inline-flex; align-items: center;
+  border-radius: 0.5rem;
+  background: var(--primary-foreground);
+  padding: 0.75rem;
+}
+.footer-logo-wrap img { height: 3rem; width: auto; }
+.footer-desc { margin-top: 1rem; font-size: 0.875rem; color: color-mix(in oklab, var(--primary-foreground) 70%, transparent); max-width: 28rem; }
+.footer-col h4 { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: color-mix(in oklab, var(--primary-foreground) 60%, transparent); }
+.footer-col ul { margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.875rem; }
+.footer-col ul a:hover { color: var(--accent); }
+.footer-col .contact-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; color: color-mix(in oklab, var(--primary-foreground) 80%, transparent); }
+.footer-bottom { border-top: 1px solid color-mix(in oklab, var(--primary-foreground) 10%, transparent); }
+.footer-bottom .inner { display: flex; flex-direction: column; gap: 0.5rem; padding: 1.5rem 0; font-size: 0.75rem; color: color-mix(in oklab, var(--primary-foreground) 50%, transparent); }
+
+@media (min-width: 768px) {
+  .site-footer .grid { grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .footer-brand { grid-column: span 2; }
+  .footer-bottom .inner { flex-direction: row; justify-content: space-between; }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosotros — SAES Consulting</title>
+  <meta name="description" content="Desde 1993 SAES Consulting brinda servicios de Head Hunting con consultores que ocuparon puestos directivos en empresas líderes." />
+  <meta property="og:title" content="Nosotros — SAES Consulting" />
+  <meta property="og:description" content="Más de 30 años conectando líderes con empresas líderes." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Fraunces', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <header class="site-header" id="site-header"></header>
+
+  <main class="flex-1">
+
+    <!-- ── Intro ─────────────────────────────────────────────── -->
+    <section class="container-page py-20">
+      <span class="section-label">Quiénes somos</span>
+      <h1 class="font-display mt-3 max-w-3xl text-4xl md:text-6xl">
+        Conectamos líderes con empresas líderes
+        <span class="italic" style="color: var(--accent);"> desde 1993.</span>
+      </h1>
+
+      <div class="mt-12 grid gap-12 md:grid-cols-2 items-center">
+        <img
+          src="assets/images/about-handshake.jpg"
+          alt="Reunión ejecutiva"
+          loading="lazy"
+          class="rounded-2xl shadow-elegant"
+        />
+        <div class="text-lg" style="color: var(--muted-foreground); display: flex; flex-direction: column; gap: 1.25rem;">
+          <p>
+            Desde su fundación en <span style="color: var(--foreground); font-weight: 500;">1993</span>,
+            SAES Consulting ha brindado servicios de Head Hunting a empresas líderes del mercado.
+          </p>
+          <p>
+            Nuestro éxito se basa en satisfacer los requerimientos de nuestros clientes. Contamos con consultores
+            con más de 20 años de experiencia que, antes de dedicarse a la asesoría, ocuparon puestos directivos
+            en empresas importantes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Misión + Filosofía ────────────────────────────────── -->
+    <section class="py-20" style="background: oklch(0.96 0 0 / 60%);">
+      <div class="container-page grid gap-12 md:grid-cols-2">
+
+        <div class="card" style="padding: 2.5rem;">
+          <span class="section-label">Misión</span>
+          <p class="mt-4 text-lg leading-relaxed">
+            Contribuimos con las empresas en la consecución de sus resultados y visión de negocio,
+            proporcionándoles servicios integrales vanguardistas de Recursos Humanos de la más alta calidad,
+            potencializando el capital más importante con que cuentan:
+            <span class="italic" style="color: var(--accent);">"el humano"</span>.
+          </p>
+        </div>
+
+        <div class="bg-hero rounded-2xl shadow-elegant p-10 text-white">
+          <span class="text-xs uppercase tracking-widest" style="color: var(--accent);">Filosofía</span>
+          <p class="font-display mt-4 text-2xl leading-snug">
+            "Las empresas no necesitan jefes, necesitan líderes — y en SAES Consulting los identificamos."
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Valores ───────────────────────────────────────────── -->
+    <section class="container-page py-20">
+      <span class="section-label">Valores</span>
+      <h2 class="font-display mt-3 text-3xl md:text-4xl">Lo que nos define</h2>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+        <!-- Valor 1 -->
+        <div class="card transition-all hover:-translate-y-1 hover:shadow-elegant">
+          <span class="grid h-11 w-11 place-items-center rounded-full"
+            style="background: color-mix(in oklab, var(--accent) 15%, transparent); color: var(--accent);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+            </svg>
+          </span>
+          <h3 class="mt-4 text-base font-semibold">Nos importa la gente</h3>
+          <p class="mt-1 text-sm" style="color: var(--muted-foreground);">y su entorno laboral.</p>
+        </div>
+
+        <!-- Valor 2 -->
+        <div class="card transition-all hover:-translate-y-1 hover:shadow-elegant">
+          <span class="grid h-11 w-11 place-items-center rounded-full"
+            style="background: color-mix(in oklab, var(--accent) 15%, transparent); color: var(--accent);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            </svg>
+          </span>
+          <h3 class="mt-4 text-base font-semibold">Nos importa el desarrollo</h3>
+          <p class="mt-1 text-sm" style="color: var(--muted-foreground);">y el conocimiento.</p>
+        </div>
+
+        <!-- Valor 3 -->
+        <div class="card transition-all hover:-translate-y-1 hover:shadow-elegant">
+          <span class="grid h-11 w-11 place-items-center rounded-full"
+            style="background: color-mix(in oklab, var(--accent) 15%, transparent); color: var(--accent);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/>
+              <path d="M9 18h6"/><path d="M10 22h4"/>
+            </svg>
+          </span>
+          <h3 class="mt-4 text-base font-semibold">Nos atrevemos a innovar</h3>
+          <p class="mt-1 text-sm" style="color: var(--muted-foreground);">en cada proceso.</p>
+        </div>
+
+        <!-- Valor 4 -->
+        <div class="card transition-all hover:-translate-y-1 hover:shadow-elegant">
+          <span class="grid h-11 w-11 place-items-center rounded-full"
+            style="background: color-mix(in oklab, var(--accent) 15%, transparent); color: var(--accent);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="m11 17 2 2a1 1 0 1 0 3-3"/>
+              <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/>
+              <path d="m21 3 1 11h-1"/>
+              <path d="M4.73 18.73 2.5 21.5a1.5 1.5 0 1 1-2-2l3.26-2.26"/>
+              <path d="M11 17 9 15"/>
+              <path d="m10.5 9.5-1 1a1 1 0 1 0 3 3"/>
+            </svg>
+          </span>
+          <h3 class="mt-4 text-base font-semibold">Nos importan nuestros clientes</h3>
+          <p class="mt-1 text-sm" style="color: var(--muted-foreground);">y sus resultados.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="assets/js/components.js"></script>
+</body>
+</html>

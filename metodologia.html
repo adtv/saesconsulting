@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metodología SAES — Proceso de Head Hunting</title>
+  <meta name="description" content="Conocemos a su empresa, definimos el perfil, buscamos y entrevistamos candidatos, presentamos terna y acompañamos la contratación." />
+  <meta property="og:title" content="Metodología SAES" />
+  <meta property="og:description" content="Cinco pasos de un proceso integral, atendido directamente por nuestros directivos." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Fraunces', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <header class="site-header" id="site-header"></header>
+
+  <main class="flex-1">
+
+    <!-- ── Intro ─────────────────────────────────────────────── -->
+    <section class="container-page py-20">
+      <div class="grid gap-12 md:grid-cols-[1.2fr_1fr] items-center">
+        <div>
+          <span class="section-label">Metodología</span>
+          <h1 class="font-display mt-3 text-4xl md:text-6xl">
+            Un proceso integral,
+            <span class="italic" style="color: var(--accent);"> atendido por directivos.</span>
+          </h1>
+          <p class="mt-6 text-lg" style="color: var(--muted-foreground);">
+            Toda la atención y seguimiento es directamente con los directivos de SAES Consulting.
+            Cinco etapas claras, sin intermediarios.
+          </p>
+        </div>
+        <img
+          src="assets/images/methodology.jpg"
+          alt="Mesa de trabajo"
+          loading="lazy"
+          class="rounded-2xl shadow-elegant"
+        />
+      </div>
+    </section>
+
+    <!-- ── Steps ─────────────────────────────────────────────── -->
+    <section class="container-page pb-20">
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+
+        <!-- Paso 01 -->
+        <article class="card shadow-soft" style="padding: 2rem 2.5rem;">
+          <div class="grid gap-6 md:gap-12 items-start" style="grid-template-columns: 1fr;">
+            <div class="flex items-start gap-4 flex-wrap">
+              <span class="font-display text-5xl" style="color: var(--accent); line-height: 1;">01</span>
+              <h3 class="font-display text-2xl mt-1" style="color: var(--primary);">Conocimiento de la empresa</h3>
+            </div>
+            <ul style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+                <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+                <span>¿Quién es mi cliente y cómo trabaja?</span>
+              </li>
+              <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+                <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+                <span>¿Dónde está posicionado?</span>
+              </li>
+              <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+                <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+                <span>¿Cuál es su cultura organizacional?</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Paso 02 -->
+        <article class="card shadow-soft" style="padding: 2rem 2.5rem;">
+          <div class="flex items-start gap-4 flex-wrap" style="margin-bottom: 1rem;">
+            <span class="font-display text-5xl" style="color: var(--accent); line-height: 1;">02</span>
+            <h3 class="font-display text-2xl mt-1" style="color: var(--primary);">Perfil del puesto</h3>
+          </div>
+          <ul style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Características generales del candidato ideal.</span>
+            </li>
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Necesidades técnicas requeridas.</span>
+            </li>
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Principales responsabilidades.</span>
+            </li>
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Competencias laborales y liderazgo.</span>
+            </li>
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Nivel de remuneración.</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Paso 03 -->
+        <article class="card shadow-soft" style="padding: 2rem 2.5rem;">
+          <div class="flex items-start gap-4 flex-wrap" style="margin-bottom: 1rem;">
+            <span class="font-display text-5xl" style="color: var(--accent); line-height: 1;">03</span>
+            <h3 class="font-display text-2xl mt-1" style="color: var(--primary);">Búsqueda y entrevista</h3>
+          </div>
+          <ul style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Inteligencia de mercado.</span>
+            </li>
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Cartera especializada.</span>
+            </li>
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Publicación en distintos medios.</span>
+            </li>
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Hunting directo y networking.</span>
+            </li>
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Entrevista por competencias y evaluación.</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Paso 04 -->
+        <article class="card shadow-soft" style="padding: 2rem 2.5rem;">
+          <div class="flex items-start gap-4 flex-wrap" style="margin-bottom: 1rem;">
+            <span class="font-display text-5xl" style="color: var(--accent); line-height: 1;">04</span>
+            <h3 class="font-display text-2xl mt-1" style="color: var(--primary);">Presentación de candidatos</h3>
+          </div>
+          <ul style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Terna de candidatos.</span>
+            </li>
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Informe individual por candidato.</span>
+            </li>
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Salario actual y paquete de compensación.</span>
+            </li>
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Seguimiento del proceso de selección por parte del cliente.</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Paso 05 -->
+        <article class="card shadow-soft" style="padding: 2rem 2.5rem;">
+          <div class="flex items-start gap-4 flex-wrap" style="margin-bottom: 1rem;">
+            <span class="font-display text-5xl" style="color: var(--accent); line-height: 1;">05</span>
+            <h3 class="font-display text-2xl mt-1" style="color: var(--primary);">Contratación del candidato</h3>
+          </div>
+          <ul style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Intervenimos en la propuesta de oferta.</span>
+            </li>
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Brindamos consultoría personalizada.</span>
+            </li>
+            <li class="flex items-start gap-3" style="color: var(--muted-foreground);">
+              <span style="margin-top: 0.5rem; height: 6px; width: 6px; flex-shrink: 0; border-radius: 9999px; background: var(--accent); display: inline-block;"></span>
+              <span>Acompañamos la transición.</span>
+            </li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="assets/js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios — Head Hunting Ejecutivo | SAES Consulting</title>
+  <meta name="description" content="Búsqueda de ejecutivos, selección, estimación de tiempos y cartera especializada para puestos gerenciales y directivos." />
+  <meta property="og:title" content="Servicios de Head Hunting — SAES Consulting" />
+  <meta property="og:description" content="Ventajas competitivas en búsqueda y selección de ejecutivos." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Fraunces', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <header class="site-header" id="site-header"></header>
+
+  <main class="flex-1">
+
+    <!-- ── Intro ─────────────────────────────────────────────── -->
+    <section class="container-page py-20">
+      <span class="section-label">Servicios</span>
+      <h1 class="font-display mt-3 max-w-3xl text-4xl md:text-6xl">
+        Ventajas competitivas
+        <span class="italic" style="color: var(--accent);"> en cada búsqueda.</span>
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg" style="color: var(--muted-foreground);">
+        Cada consultor cuenta con experiencia profesional dentro del área para la cual recluta y brinda
+        asesoramiento — un servicio integral que genera valor agregado.
+      </p>
+
+      <!-- Cards grid -->
+      <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- 01 -->
+        <article class="card flex flex-col transition-all hover:-translate-y-1 hover:shadow-elegant" style="padding: 1.75rem;">
+          <div class="flex items-center justify-between">
+            <span class="grid h-12 w-12 place-items-center rounded-xl bg-accent-gradient text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+              </svg>
+            </span>
+            <span class="font-mono text-xs" style="color: var(--muted-foreground);">01 / 06</span>
+          </div>
+          <h3 class="font-display mt-5 text-xl" style="color: var(--primary);">Búsqueda con principales competidores</h3>
+          <p class="mt-3 text-sm leading-relaxed" style="color: var(--muted-foreground);">
+            Realizamos la búsqueda en las principales empresas competidoras y en la región, con absoluta
+            confidencialidad. Conocemos el mercado en sueldos, compensaciones y características del personal.
+          </p>
+        </article>
+
+        <!-- 02 -->
+        <article class="card flex flex-col transition-all hover:-translate-y-1 hover:shadow-elegant" style="padding: 1.75rem;">
+          <div class="flex items-center justify-between">
+            <span class="grid h-12 w-12 place-items-center rounded-xl bg-accent-gradient text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <polyline points="16 11 18 13 22 9"/>
+              </svg>
+            </span>
+            <span class="font-mono text-xs" style="color: var(--muted-foreground);">02 / 06</span>
+          </div>
+          <h3 class="font-display mt-5 text-xl" style="color: var(--primary);">Selección de ejecutivos</h3>
+          <p class="mt-3 text-sm leading-relaxed" style="color: var(--muted-foreground);">
+            Los candidatos se presentan previamente seleccionados, con el perfil idóneo solicitado por el cliente.
+          </p>
+        </article>
+
+        <!-- 03 -->
+        <article class="card flex flex-col transition-all hover:-translate-y-1 hover:shadow-elegant" style="padding: 1.75rem;">
+          <div class="flex items-center justify-between">
+            <span class="grid h-12 w-12 place-items-center rounded-xl bg-accent-gradient text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </span>
+            <span class="font-mono text-xs" style="color: var(--muted-foreground);">03 / 06</span>
+          </div>
+          <h3 class="font-display mt-5 text-xl" style="color: var(--primary);">Estimación del tiempo</h3>
+          <p class="mt-3 text-sm leading-relaxed" style="color: var(--muted-foreground);">
+            Para cada proyecto presentamos candidatos finalistas en un plazo no mayor a tres semanas.
+          </p>
+        </article>
+
+        <!-- 04 -->
+        <article class="card flex flex-col transition-all hover:-translate-y-1 hover:shadow-elegant" style="padding: 1.75rem;">
+          <div class="flex items-center justify-between">
+            <span class="grid h-12 w-12 place-items-center rounded-xl bg-accent-gradient text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <line x1="12" y1="1" x2="12" y2="23"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </span>
+            <span class="font-mono text-xs" style="color: var(--muted-foreground);">04 / 06</span>
+          </div>
+          <h3 class="font-display mt-5 text-xl" style="color: var(--primary);">Costos competitivos</h3>
+          <p class="mt-3 text-sm leading-relaxed" style="color: var(--muted-foreground);">
+            Realizamos la búsqueda con un costo menor al de nuestros principales competidores, proporcionando
+            mejores resultados en menor tiempo.
+          </p>
+        </article>
+
+        <!-- 05 -->
+        <article class="card flex flex-col transition-all hover:-translate-y-1 hover:shadow-elegant" style="padding: 1.75rem;">
+          <div class="flex items-center justify-between">
+            <span class="grid h-12 w-12 place-items-center rounded-xl bg-accent-gradient text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <rect width="20" height="14" x="2" y="7" rx="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+            </span>
+            <span class="font-mono text-xs" style="color: var(--muted-foreground);">05 / 06</span>
+          </div>
+          <h3 class="font-display mt-5 text-xl" style="color: var(--primary);">Cartera de candidatos</h3>
+          <p class="mt-3 text-sm leading-relaxed" style="color: var(--muted-foreground);">
+            Amplia cartera de candidatos que laboran actualmente en organizaciones de primer nivel,
+            ocupando posiciones clave dentro de sus empresas.
+          </p>
+        </article>
+
+        <!-- 06 -->
+        <article class="card flex flex-col transition-all hover:-translate-y-1 hover:shadow-elegant" style="padding: 1.75rem;">
+          <div class="flex items-center justify-between">
+            <span class="grid h-12 w-12 place-items-center rounded-xl bg-accent-gradient text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.8a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.319a.5.5 0 0 1 .798-.519l4.276 3.365a1 1 0 0 0 1.516-.294z"/>
+              </svg>
+            </span>
+            <span class="font-mono text-xs" style="color: var(--muted-foreground);">06 / 06</span>
+          </div>
+          <h3 class="font-display mt-5 text-xl" style="color: var(--primary);">Puestos especializados y directivos</h3>
+          <p class="mt-3 text-sm leading-relaxed" style="color: var(--muted-foreground);">
+            Nos enfocamos en puestos de alta especialización y dirección en las diferentes ramas de la
+            industria — una de nuestras principales ventajas competitivas.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ── CTA ───────────────────────────────────────────────── -->
+    <section class="container-page pb-20">
+      <div class="bg-hero overflow-hidden rounded-3xl p-10 text-white md:p-14">
+        <div class="grid gap-6 md:grid-cols-[2fr_1fr] items-center">
+          <h2 class="font-display text-3xl md:text-4xl">¿Necesita cubrir una posición clave?</h2>
+          <a href="contacto.html" class="btn-primary w-fit">
+            Solicitar propuesta
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="assets/js/components.js"></script>
+</body>
+</html>
